@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.e_learning">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".admiSystemConfirme"></activity>
+        <activity android:name=".adminSystemInitialiser" />
+        <activity android:name=".admineModuleConsulte" />
+        <activity android:name=".admnProfApprouve" />
+        <activity android:name=".adminAjouteNew" />
+        <activity android:name=".adminHome" />
+        <activity android:name=".profSearchEtudiant" />
+        <activity
+            android:name=".profNewModule"
+            android:label="@string/title_activity_prof_new_module"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".profNewContenu" />
+        <activity android:name=".profHome" />
+        <activity android:name=".commentEtudiant" />
+        <activity android:name=".discussionEtudiant" />
+        <activity android:name=".coursEtudiant" />
+        <activity android:name=".notificationEtudiant" />
+        <activity android:name=".searchEtudiant" />
+        <activity android:name=".homeEtudiant" />
+        <activity android:name=".inscriptionModal" />
+        <activity android:name=".inscription" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
