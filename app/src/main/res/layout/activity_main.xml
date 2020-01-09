@@ -68,7 +68,7 @@
             tools:layout_editor_absoluteY="663dp"
             android:textStyle="bold"
             android:textColor="@color/colorPink"
-            android:textSize="15sp">
+            android:textSize="14sp">
         </TextView>
 
     </LinearLayout>
