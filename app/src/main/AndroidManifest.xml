@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.application.e_learning">
-
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,35 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admiSystemConfirme"></activity>
-        <activity android:name=".adminSystemInitialiser" />
-        <activity android:name=".admineModuleConsulte" />
-        <activity android:name=".admnProfApprouve" />
-        <activity android:name=".adminAjouteNew" />
-        <activity android:name=".adminHome" />
-        <activity android:name=".profSearchEtudiant" />
+        <activity android:name=".admiSystemConfirme" android:screenOrientation="portrait"></activity>
+        <activity android:name=".adminSystemInitialiser" android:screenOrientation="portrait" />
+        <activity android:name=".admineModuleConsulte" android:screenOrientation="portrait" />
+        <activity android:name=".admnProfApprouve" android:screenOrientation="portrait"/>
+        <activity android:name=".adminAjouteNew" android:screenOrientation="portrait"/>
+        <activity android:name=".adminHome" android:screenOrientation="portrait"/>
+        <activity android:name=".profSearchEtudiant" android:screenOrientation="portrait"/>
         <activity
             android:name=".profNewModule"
             android:label="@string/title_activity_prof_new_module"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".profNewContenu" />
-        <activity android:name=".profHome" />
-        <activity android:name=".commentEtudiant" />
-        <activity android:name=".discussionEtudiant" />
-        <activity android:name=".coursEtudiant" />
-        <activity android:name=".notificationEtudiant" />
-        <activity android:name=".searchEtudiant" />
-        <activity android:name=".homeEtudiant" />
-        <activity android:name=".inscriptionModal" />
-        <activity android:name=".inscription" />
-        <activity android:name=".login" />
-        <activity android:name=".MainActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".profNewContenu" android:screenOrientation="portrait"/>
+        <activity android:name=".profHome" android:screenOrientation="portrait"/>
+        <activity android:name=".commentEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".discussionEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".coursEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".notificationEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".searchEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".homeEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".inscriptionModal" android:screenOrientation="portrait"/>
+        <activity android:name=".inscription" android:screenOrientation="portrait"/>
+        <activity android:name=".login" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,18 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/whitebackground">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/mainlogo"
+        android:contentDescription="@string/imglogo"
+        android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ImageView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="162sp"
+        android:background="@color/colorButtonPrimary"
+        android:fontFamily="@font/meera_inimai"
+        android:text="@string/btnbienvenu"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="441dp"
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+    </Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/labelencorenoninscrie"
+            android:textStyle="bold"
+            android:textColor="@color/colorBack"
+            android:textSize="15sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelinscriezvou"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="663dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPink"
+            android:textSize="15sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

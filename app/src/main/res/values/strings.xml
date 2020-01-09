@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">E-Learning</string>
     <string name="title_activity_prof_new_module">profNewModule</string>
+
+    <string name="imglogo">Logo</string>
+    <string name="imgdesign">Design</string>
+    <string name="imgback">Background</string>
+
+    <string name="btnbienvenu">Bienvenu</string>
+    <string name="labelencorenoninscrie">Encore pas inscrire ? </string>
+    <string name="labelinscriezvou"> Inscrie Vous !</string>
+
+    <string name="labelauthentification">Authentification</string>
+    <string name="btnlogin">Login</string>
+    <string name="labehelp">Need Help ?</string>
+    <string name="inputmail">example@mail.com</string>
+    <string name="inputpass">**********</string>
 </resources>

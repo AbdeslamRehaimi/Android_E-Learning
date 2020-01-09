@@ -3,4 +3,15 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBack">#000000</color>
+    <color name="colorPink">#EE2694</color>
+
+    <color name="colorButtonPrimary">#0087B7</color>
+    <color name="colorButtonDanger">#FF0000</color>
+    <color name="colorButtonDiscussion">#3D0057</color>
+    <color name="colorButtonSucces">#00FF08</color>
+    <color name="colorButtonCancel">#E3E3E3</color>
+
 </resources>
