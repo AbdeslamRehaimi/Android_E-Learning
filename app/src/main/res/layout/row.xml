@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/coursico" />
+
+        <TextView
+            android:id="@+id/TitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="205dp"
+            android:layout_marginLeft="205dp"
+            android:layout_toEndOf="@id/imageIv"
+
+            android:layout_toRightOf="@id/imageIv"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TitleTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+            android:text="Ceci une description de cours "
+            android:textColor="#a9a9a9"
+            android:textSize="12dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginStart="205dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btnradius"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+            android:text="Visualiser"
+            android:textColor="#d27c28"
+            android:textSize="8sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/nomprof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+
+            android:text="Nomdeprof" />
+        <ImageView
+            android:id="@+id/iconcmnt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/description"
+
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="39dp"
+            android:layout_toEndOf="@id/comments"
+            android:layout_toRightOf="@id/imageIv"
+            android:src="@drawable/ic_comment_black_24dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

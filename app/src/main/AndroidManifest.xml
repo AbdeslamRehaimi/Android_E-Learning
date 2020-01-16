@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.application.e_learning">
-    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    package="com.firebaseloginapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/elearning"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admiSystemConfirme" android:screenOrientation="portrait"></activity>
-        <activity android:name=".adminSystemInitialiser" android:screenOrientation="portrait" />
-        <activity android:name=".admineModuleConsulte" android:screenOrientation="portrait" />
-        <activity android:name=".admnProfApprouve" android:screenOrientation="portrait"/>
-        <activity android:name=".adminAjouteNew" android:screenOrientation="portrait"/>
-        <activity android:name=".adminHome" android:screenOrientation="portrait"/>
-        <activity android:name=".profSearchEtudiant" android:screenOrientation="portrait"/>
-        <activity
-            android:name=".profNewModule"
-            android:label="@string/title_activity_prof_new_module"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".profNewContenu" android:screenOrientation="portrait"/>
-        <activity android:name=".profHome" android:screenOrientation="portrait"/>
-        <activity android:name=".commentEtudiant" android:screenOrientation="portrait"/>
-        <activity android:name=".discussionEtudiant" android:screenOrientation="portrait"/>
-        <activity android:name=".coursEtudiant" android:screenOrientation="portrait"/>
-        <activity android:name=".notificationEtudiant" android:screenOrientation="portrait"/>
-        <activity android:name=".searchEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".pdfUploader" android:screenOrientation="portrait"/>
+
+        <activity android:name=".ContentNotificationProf" android:screenOrientation="portrait" />
+        <activity android:name=".ContentSearchProf"  android:screenOrientation="portrait"/>
+        <activity android:name=".ContentHomeProf" android:screenOrientation="portrait" />
+        <activity android:name=".HomeProf" android:screenOrientation="portrait"></activity>
         <activity android:name=".homeEtudiant" android:screenOrientation="portrait"/>
-        <activity android:name=".inscriptionModal" android:screenOrientation="portrait"/>
-        <activity android:name=".inscription" android:screenOrientation="portrait"/>
-        <activity android:name=".login" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+        <activity android:name=".contentSearchEtudiant" android:screenOrientation="portrait"/>
+        <activity android:name=".contentNotificationEtudiant" android:screenOrientation="portrait" />
+        <activity android:name=".contentHomeEtudiant" android:screenOrientation="portrait" />
+        <activity android:name=".AccountActivity.AnotherActivity" android:screenOrientation="portrait" />
+        <activity android:name=".AccountActivity.Contenu" android:screenOrientation="portrait" />
+        <activity android:name=".AccountActivity.ProfAcc" android:screenOrientation="portrait" />
+        <activity android:name=".AccountActivity.LoginActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        <activity android:name=".AccountActivity.MainActivity" />
+        <activity android:name=".AccountActivity.SignupActivity" />
+        <activity android:name=".AccountActivity.ResetPasswordActivity" />
     </application>
 
 </manifest>

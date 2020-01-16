@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#00bfbf</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#009e9e</color>
 
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#181818</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#190714</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#190714</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorBtnSave">#20F014</color>
+    <color name="colorBtnAnnuler">#837676</color>
+    <color name="colorBtnUpload">#000000</color>
+    <color name="colorText">#FFFFFF</color>
+
+    <color name="colorOrange">#F2B32A</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorBack">#000000</color>
-    <color name="colorPink">#EE2694</color>
-
-    <color name="colorButtonPrimary">#0087B7</color>
-    <color name="colorButtonDanger">#FF0000</color>
-    <color name="colorButtonDiscussion">#3D0057</color>
-    <color name="colorButtonSucces">#00FF08</color>
-    <color name="colorButtonCancel">#E3E3E3</color>
-
 </resources>

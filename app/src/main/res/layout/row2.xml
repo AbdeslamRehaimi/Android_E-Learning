@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/student"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NomEtudiant"
+            android:text="NomEtudiant"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imageIv"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/PrenomEtudiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginLeft="102dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+            android:text="Prenom"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFiliere"
+            android:text="Filiere Master ISI "
+            android:textSize="12dp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/imageIv"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/PrenomEtudiant"
+
+
+            />
+
+        <TextView
+            android:id="@+id/cneEtudiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NomEtudiant"
+            android:layout_marginStart="159dp"
+            android:layout_marginLeft="159dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+            android:text="CNE Etudiant"
+            android:textColor="#a9a9a9"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cneEtudiant"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-18dp"
+            android:layout_toEndOf="@id/imageIv"
+            android:layout_toRightOf="@id/imageIv"
+
+            android:text="Email Etudiant" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

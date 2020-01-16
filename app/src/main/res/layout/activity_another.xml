@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fff"
+
+    tools:context=".AccountActivity.AnotherActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cours" />
+
+    <TextView
+        android:id="@+id/TitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="7dp"
+        android:text="Title"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptions"
+        android:text="Ceci une description de cours "
+        android:textSize="12dp"
+        android:textColor="#a9a9a9"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/TitleTv"
+        />
+
+    <TextView
+        android:id="@+id/nomprof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Nom prof"
+        android:layout_below="@id/descriptions"/>
+
+            <Button
+                android:id="@+id/btnTelecharger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Telecharger"
+                android:layout_below="@+id/nomprof"
+                android:background="@drawable/btnradius">
+
+            </Button>
+
+            <ImageView
+                android:id="@+id/contenu_detail_currentuser_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/descriptions"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="122dp"
+                android:src="@drawable/manwhiteicon"
+                tools:ignore="MissingConstraints"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+
+                android:id="@+id/contenu_detail_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contenu_detail_currentuser_img"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-41dp"
+                android:layout_toEndOf="@id/contenu_detail_currentuser_img"
+                android:layout_toRightOf="@id/contenu_detail_currentuser_img"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:ems="10"
+                android:hint="Write Comment"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/contenu_detail_add_comment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contenu_detail_comment"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-49dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toEndOf="@id/contenu_detail_comment"
+                android:layout_toRightOf="@id/contenu_detail_comment"
+                android:background="@drawable/edittext_button_style_rounded"
+                android:text="Add" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/contenu_detail_comment"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
